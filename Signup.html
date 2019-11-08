@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    
+<body>
+    <style>
+    body{
+        font-family: 'helvetica';
+   font-size:20px;
+    }
+    fieldset {
+  display:inline-flex;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 100px;
+  padding-bottom: 10em;
+  padding-left: 10em;
+  padding-right: 10em;
+  border: 2px groove (internal value);
+}
+    </style>
+<div align="center">
+<form>
+    <fieldset background-color: gray;>
+        <h2>SIGN UP</h2>
+        First Name:<br>
+  <input type="text" name="firstname" placeholder="First Name" id="fn">
+  <br>
+  Last Name:<br>
+  <input type="text" name="firstname" placeholder="Last Name" id="ls">
+  <br>
+  Username/Email:<br>
+  <input type="text" name="firstname" placeholder="Username/Email" id="email">
+  <br>
+  Password<br>
+  <input type="password" name="lastname" placeholder="Password">
+  <br><br>
+  <input type="button" value="Submit" onclick="f1()">
+  </fieldset>
+</form> 
+
+</div>
+<script>
+    function f1()
+{
+  var obj = 
+  {
+    name: document.getElementById("fn").value
+  };
+  alert("Name: "+obj.name);
+}
+</script>
+</body>
+</html>
